@@ -22,7 +22,7 @@ public class NormalizeText extends Menu<String>{
             String inputText = readFile(inputFilePath);
 
             // Chuẩn hóa văn bản
-            String normalizedText = model.normalizeParagraph(inputText);
+            String normalizedText = model.normalizeText(inputText);
 
             // Ghi văn bản đã chuẩn hóa vào tệp đầu ra
             writeFile(outputFilePath, normalizedText);
